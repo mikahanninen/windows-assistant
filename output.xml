@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.7.5 on win32)" generated="20211015 10:56:40.937" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\User\.vscode\extensions\robocorp.robotframework-lsp-0.24.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Collect search query from user">
+<var>${search_query}=</var>
+<msg timestamp="20211015 10:56:42.270" level="FAIL">No keyword with name 'Collect search query from user' found.</msg>
+<status status="FAIL" starttime="20211015 10:56:42.270" endtime="20211015 10:56:42.270"/>
+</kw>
+<kw name="Open Dialog">
+<arg>${search_query}</arg>
+<arg>wildcard=True</arg>
+<status status="NOT RUN" starttime="20211015 10:56:42.273" endtime="20211015 10:56:42.273"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${attrs}</var>
+<arg>name</arg>
+<arg>class_name</arg>
+<arg>control_type</arg>
+<arg>legacy_value</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20211015 10:56:42.273" endtime="20211015 10:56:42.273"/>
+</kw>
+<kw name="Analyze Window">
+<arg>attrs=${attrs}</arg>
+<status status="NOT RUN" starttime="20211015 10:56:42.275" endtime="20211015 10:56:42.275"/>
+</kw>
+<kw name="Press Keys">
+<arg>cmd</arg>
+<arg>m</arg>
+<status status="NOT RUN" starttime="20211015 10:56:42.277" endtime="20211015 10:56:42.277"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Done.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20211015 10:56:42.277" endtime="20211015 10:56:42.278"/>
+</kw>
+<status status="PASS" starttime="20211015 10:56:40.975" endtime="20211015 10:56:45.702"/>
+</kw>
+<status status="PASS" starttime="20211015 10:56:40.975" endtime="20211015 10:56:45.703"/>
+</test>
+<status status="PASS" starttime="20211015 10:56:40.938" endtime="20211015 10:56:45.704"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

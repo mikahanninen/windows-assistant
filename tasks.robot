@@ -20,6 +20,5 @@ Minimal task
     END
     Open Dialog    ${search_query.search}    wildcard=True
     ${attrs}=    Create List    name    class_name    control_type    legacy_value
-    Analyze Window    attrs=${attrs}    classes=${classes}
     Press Keys    cmd    m
     Log    Done.

@@ -1,7 +1,7 @@
 # TODO. Add attribute selection
 *** Settings ***
 Library           RPA.Dialogs
-Library           RPA.Desktop.Windows    experimental=True    WITH NAME    Windows
+Library           RPA.Windows    WITH NAME    Windows
 Library           RPA.Desktop    WITH NAME    Desktop
 
 *** Keywords ***
@@ -18,7 +18,7 @@ Minimal task
     IF    "${search_query.classes}" != ""
         ${classes}=    Evaluate    [c.strip() for c in $search_query.classes.split(',')]
     END
-    Open Dialog    ${search_query.search}    wildcard=True
+    #Open Dialog    ${search_query.search}    wildcard=True
     ${attrs}=    Create List    name    class_name    control_type    legacy_value
-    Press Keys    cmd    m
+    #Press Keys    cmd    m
     Log    Done.
